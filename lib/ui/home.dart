@@ -18,17 +18,25 @@ class ScaffoldExample extends StatelessWidget {
               icon: const Icon(Icons.shopping_cart))
         ],
       ),
-      body: const Center(
-          child: Text(
-        "Scaffold Material.",
-        textDirection: TextDirection.ltr,
-        style: TextStyle(
-            fontSize: 25,
-            fontWeight: FontWeight.bold,
-            fontStyle: FontStyle.italic,
-            color: Colors.black),
-      )),
       backgroundColor: Colors.amberAccent,
+      body: Container(
+          alignment: Alignment.center,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              InkWell(
+                child: const Text(
+                  "Pressed me",
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 25,
+                      fontStyle: FontStyle.italic,
+                      color: Colors.black),
+                ),
+                onTap: () => debugPrint("Tapped...."),
+              )
+            ],
+          )),
     );
   }
 }
