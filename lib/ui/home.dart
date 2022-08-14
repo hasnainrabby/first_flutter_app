@@ -23,8 +23,10 @@ class ScaffoldExample extends StatelessWidget {
           alignment: Alignment.center,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              InkWell(
+            children: const [
+              CustomButton()
+
+              /* InkWell(
                 child: const Text(
                   "Pressed me",
                   style: TextStyle(
@@ -34,9 +36,45 @@ class ScaffoldExample extends StatelessWidget {
                       color: Colors.black),
                 ),
                 onTap: () => debugPrint("Tapped...."),
-              )
+              )*/
+
             ],
           )),
+    );
+  }
+}
+
+class CustomButton extends StatelessWidget {
+  const CustomButton({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+
+    return GestureDetector(
+      onTap: () {
+        final snackBar = SnackBar(
+          content: const Text("hello Bangladesh!"),
+          backgroundColor: Colors.limeAccent.shade700,
+        );
+
+        ScaffoldMessenger.of(context).showSnackBar(snackBar);
+
+
+      },
+      child: Container(
+        padding: const EdgeInsets.all(10.0),
+        decoration: BoxDecoration(
+            color: Colors.lightBlue.shade700,
+            borderRadius: BorderRadius.circular(5.0)),
+        child: const Text(
+          "Button",
+          style: TextStyle(
+              fontSize: 12,
+              fontStyle: FontStyle.italic,
+              fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
     );
   }
 }
