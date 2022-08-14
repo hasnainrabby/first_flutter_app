@@ -62,7 +62,7 @@ class CustomButton extends StatelessWidget {
 
       },
       child: Container(
-        padding: const EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(15.0),
         decoration: BoxDecoration(
             color: Colors.lightBlue.shade700,
             borderRadius: BorderRadius.circular(5.0)),
