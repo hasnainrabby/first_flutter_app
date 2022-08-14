@@ -18,6 +18,10 @@ class ScaffoldExample extends StatelessWidget {
               icon: const Icon(Icons.shopping_cart))
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(items:  const [
+        BottomNavigationBarItem(icon:Icon (Icons.account_box),label: 'Account'),
+        BottomNavigationBarItem(icon:Icon (Icons.alarm),label: 'Alarm')
+      ],onTap: (int index)=> debugPrint("Tapped item: $index"),),
       backgroundColor: Colors.amberAccent,
       body: Container(
           alignment: Alignment.center,
