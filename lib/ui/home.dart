@@ -18,6 +18,12 @@ class ScaffoldExample extends StatelessWidget {
               icon: const Icon(Icons.shopping_cart))
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.cyan,
+        child: const Icon(Icons.cake),
+        onPressed: () => debugPrint("I like cake."),
+
+      ),
       bottomNavigationBar: BottomNavigationBar(items:  const [
         BottomNavigationBarItem(icon:Icon (Icons.account_box),label: 'Account'),
         BottomNavigationBarItem(icon:Icon (Icons.alarm),label: 'Alarm')
