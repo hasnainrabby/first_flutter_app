@@ -4,7 +4,7 @@ import 'ui/home.dart';
 
 //void main() => runApp(const Home());
 void main() => runApp( const MaterialApp(
-  home: BizCard(),
+  home: Wisdom(),
 ));
 
 
