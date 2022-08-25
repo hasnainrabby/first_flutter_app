@@ -1,6 +1,7 @@
 ## first_flutter_app
 
-A new Flutter project. #Text widget,Material design,Directory.
+A new Flutter project. #Text widget,Material design,Directory,Stateless & Stateful widget.
+Simple app for basic widget practice i) BizCard ii) Quote App 
 
 ## Getting Started
 
